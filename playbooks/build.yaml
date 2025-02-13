@@ -8,6 +8,6 @@
          name: 66022860:latest #docker image name
          source: build
          build:
-            path: ~/66022860 #path ที่เก็บไฟล์ sourcecode 
+            path: ~/66022860test #path ที่เก็บไฟล์ sourcecode 
          state: present
          force_source: true
