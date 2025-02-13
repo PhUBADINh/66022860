@@ -11,14 +11,14 @@ pipeline {
         stage("Build Docker Image") {
             steps {
                 //path yaml files
-				ansiblePlaybook playbook: '/var/lib/jenkins/workspace/66022860/playbooks/build.yaml'
+				ansiblePlaybook playbook: '/var/lib/jenkins/workspace/66022860test/playbooks/build.yaml'
             }    
         } 
         
         stage("Create Docker Container") {
             steps {
                 //path yaml files
-				ansiblePlaybook playbook: '/var/lib/jenkins/workspace/66022860/playbooks/deploy.yaml'
+				ansiblePlaybook playbook: '/var/lib/jenkins/workspace/66022860test/playbooks/deploy.yaml'
             }    
         } 
     }
