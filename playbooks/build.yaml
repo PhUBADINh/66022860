@@ -5,7 +5,7 @@
   tasks:
     - name: Building Docker Image
       docker_image:
-         name: 66022860:latest #docker image name
+         name: 66022860test:latest #docker image name
          source: build
          build:
             path: ~/66022860test #path ที่เก็บไฟล์ sourcecode 
